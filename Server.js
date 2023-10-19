@@ -13,7 +13,7 @@ import FileUpload from "express-fileupload";
 const app = express();
 
 // app.use(express.json());
-app.use("/", (req, res)=>{
+app.all("/", (req, res)=>{
     res.send("ebath backend running good")
 })
 app.use(cookieParser());
